@@ -81,6 +81,17 @@ body{
     /* padding: 0 10vw 0 10vw; */
     height:100vh;
 }
+.hero-content p{
+    font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 34px;
+
+/* Gray 4 */
+
+color: #BDBDBD;
+}
 .hero-image{
 /* width: 50vw; */
 }

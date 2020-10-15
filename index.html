@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title> Ajeet Kumar | Product Designer </title>
 </head>
 <body>
@@ -51,6 +52,8 @@
                     </div>
                     <h3>I am Ajeet. Batman's position was already taken so I choose to be a</h3>
                     <h1>Product Designer</h1>
+                    <p>I enjoys creating delightful human centered 
+                        digital experiences. </p>
                 </div>
                 <div class="hero-image">
                     <img src="./assets/hero-image.svg" alt="landing image">
@@ -60,7 +63,7 @@
 
             <!-- Projects start here -->
             <div class="projects">
-                <div class="project-container">
+                <div class="project-container" data-aos="zoom-in-down" data-aos-duration="1000" >
                     <div class="num">
                         <img src="./assets/01.svg" alt="">
                     </div>
@@ -89,7 +92,8 @@
                    </div>
                 </div>
 
-                <div class="project-container">
+                <div class="project-container" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
+                    >
                     <div class="num">
                         <img src="./assets/02.svg" alt="">
                     </div> 
@@ -122,7 +126,8 @@
                 </div>
                 
 
-                <div class="project-container">
+                <div class="project-container" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
+                    >
                     <div class="num">
                         <img src="./assets/03.svg" alt="">
                     </div>
@@ -156,7 +161,7 @@
 
             <!-- visual section starts here -->
 
-            <div class="visual">
+            <div class="visual" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-center"> 
                 <div class="visual-heading">
                     <h1 class="visual-name">Visual Exploration</h1>
                 </div>
@@ -245,6 +250,9 @@
     <!-- contact ends here -->
     <!-- Scripts -->
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
