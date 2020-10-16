@@ -340,7 +340,7 @@ color: #BDBDBD;
 
 /* Responsiveness */
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:600px){
 
     .container{
         display: grid;
