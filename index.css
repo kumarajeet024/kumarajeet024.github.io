@@ -17,15 +17,25 @@ body{
 a{
     text-decoration: none;
 }
+
+.headline{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+.headline h2{
+    font-weight: 400;
+    color:#bdbdbd;
+}
 .sidebar{
     grid-column: 1/2;
-    z-index:-1;
+    /* z-index:-1; */
 }
 .content{
     grid-column: 2/-1;
 }
 .side{
-    z-index: inherit;
+    z-index: 1;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -76,13 +86,27 @@ a{
     margin-left:25px;
 }
 /* landing page css */
+.mainn{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color:#bdbdbd;
+    font-size: 20px;;
+    font-weight: 600;
+}
 .hero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* padding: 0 10vw 0 10vw; */
-    height:100vh;
 }
 .hero-content p{
     font-family: Nunito;
@@ -102,7 +126,10 @@ color: #BDBDBD;
     /* justify-content: center; */
     align-items: center;
 }
-
+.wrap{
+color:#F2C94C;
+font-weight: 700;
+}
 .hero-content{
     width:40vw;
 }
@@ -114,17 +141,18 @@ color: #BDBDBD;
     line-height: 46px;
     
 }
+
 .hero-content h1{
-    font-weight: 900;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 68px;
-    color: #F2C94C;
+    color:black;
 }
 .hello h1{
     font-family: Nunito;
     font-style: normal;
     font-weight: 900;
-    font-size: 41px;
+    font-size: 35px;
     line-height: 56px;
     color: #2F80ED;
 }
@@ -135,6 +163,7 @@ color: #BDBDBD;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* margin-top: 100px; */
 }
 .project-container{
     display: flex;
@@ -165,6 +194,9 @@ color: #BDBDBD;
     line-height: 57px;
     color:#2F80ED;
 }
+.project-image img{
+    width: 30vw;
+}
 /* .btn{
     width:auto;
     margin-top:30px;
@@ -184,6 +216,7 @@ color: #BDBDBD;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
+    width:30vw;
 }
 
 .project-links{
@@ -231,6 +264,9 @@ color: #BDBDBD;
     flex-wrap: wrap;
 
 }
+.visual-content img{
+    width:25vw;
+}
 .about{
     display:flex;
     flex-direction: column;
@@ -243,6 +279,8 @@ color: #BDBDBD;
     font-size: 34px;
     line-height:   46px;
     font-weight: bold;
+    padding-top: 50px;
+    /* padding-left: 20px; */
 }
 .content-wrap{
     display:flex;
@@ -273,10 +311,12 @@ color: #BDBDBD;
     flex-direction:column;
     background-color: #F2C94C;
     /* justify-content: space-around; */
-    z-index: 2;
+    z-index: 1000;
 }
-.contact .top{
-    height: auto;
+.contact > .top{
+    margin-left: 15vw;
+    padding-top: 20px;
+    
 }
 .middle{
         padding-top:10vh;
@@ -287,7 +327,20 @@ color: #BDBDBD;
     justify-self:center;
     vertical-align: middle;
 }
+.project-intro-container >h6{
+    font-size: 20px;
+    font-weight: 600;
+    color:#F2C94C;
+    margin-top: -10px;
+    /* padding-left: 20px; */
+}
 
+.project-intro-container >p{
+    margin-top: -10px;
+    font-size:  23px;
+    color:#828282;
+    line-height:31px;
+}
 
 .left p{
     font-size:23px;
@@ -301,7 +354,7 @@ color: #BDBDBD;
 .left h6{
     font-size: 24px;
     font-weight: 300;
-    padding:0;
+    /* padding:0; */
 }
 
 .contact .top h1{
@@ -315,6 +368,7 @@ color: #BDBDBD;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 50px;
 }
 .bottom{
     display:flex;
@@ -335,13 +389,14 @@ color: #BDBDBD;
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .footer-social .iconify{
-    padding-left:10px;
+    margin-left:10px;
+    align-self: center;
 }
 .footer-social .iconify:first-child{
-    padding-left:0; 
+    margin-left:0; 
 }
 
 
@@ -382,7 +437,10 @@ color: #BDBDBD;
     .sidebar{
         display: none;
     }
-
+    .headline{
+        font-size: 20px;
+        margin-top: 40vw;
+    }
     .hero{
         margin-top: 10vh;
         display: flex;
@@ -437,7 +495,9 @@ color: #BDBDBD;
     }
 
     /* projects */
-
+    .projects{
+        padding-top: 100px;
+    }
     .project-container{
         display:flex;
         flex-direction: column;
@@ -475,6 +535,7 @@ color: #BDBDBD;
         align-items:center;
 
     }
+    
     .project-info h1{
         font-size:6vw
     }
@@ -509,7 +570,7 @@ color: #BDBDBD;
 
         color: #BDBDBD;
     }
-
+    
     /* visual explorations */
 
     .visual{
@@ -583,6 +644,9 @@ color: #BDBDBD;
         align-items:center;
         margin-top:20vw;
         text-align:center;
+    }
+    .contact .top{
+        margin-left: 0;
     }
     .contact .top h1{
         font-size:6vw;
