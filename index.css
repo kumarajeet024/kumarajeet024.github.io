@@ -216,7 +216,8 @@ font-weight: 700;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    width:30vw;
+    align-items: center;
+    width:35vw;
 }
 
 .project-links{
@@ -559,12 +560,16 @@ font-weight: 700;
     .project-links .btn a{
         font-size: 3vw;
     }
+    .project-intro-type{
+        font-size: 15px;
+    }
+    .project-intro-container{
+        width: 70vw;
+    }
     .project-intro-container p{
         font-size:4vw;
         line-height: 27px;
         text-align: center;
-        padding-left:3vw;
-        padding-right: 3vw;
 
         /* Gray 4*/
 
