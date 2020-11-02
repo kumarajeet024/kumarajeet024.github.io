@@ -198,8 +198,8 @@ hr{
 /* responsiveness */
 @media only screen and (max-width:600px){
     .container{
-        margin-left:3vw;
-        margin-right: 3vw;
+        margin-left:2vw;
+        margin-right: 2vw;
         margin-top:3vw;
     }
     .navigation{
@@ -208,8 +208,9 @@ hr{
         align-items: center;
         justify-content: center;
     }
-    .links{
+    .links a{
         font-size: 18px;
+        margin-left: -6px; 
     }
     .header{
         display: flex;
