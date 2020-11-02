@@ -21,8 +21,8 @@ a{
     color:#0F1A20;
 }
 .container{
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top:5vw;
 }
 .navigation{
@@ -353,10 +353,10 @@ hr{
     padding-top: 5px;
 }
 .project{
-    margin-top: 10vw;
+    margin-top: 8vw;
 }
 .visual-exploration{
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 .aboutme{
     margin-top: 5vw;;
