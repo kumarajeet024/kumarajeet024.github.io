@@ -10,10 +10,15 @@ body{
     margin:0 !important;
     padding:0 !important;
     background-color: #faf8f8;
+    background-image: url('./assets/background.svg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
     overflow-x: hidden !important;
     text-decoration: none;
     /* font-family: 'KoHo', sans-serif; */
-    color:#0F1A20;
+    color:#faf8f8;
     font-family: 'DM Sans', sans-serif;
 }
 a{
@@ -21,30 +26,38 @@ a{
     color:#0F1A20;
 }
 .container{
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top:5vw;
+    
+    margin-left: 8vw;
+    margin-right: 8vw;
+    /* margin-top:5vw; */
 }
 .navigation{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 .navigation a{
     margin-right: 25px;
     margin-left: 25px;
-    font-size:20px;
+    font-size:16px;
     font-weight: 400;
     text-decoration: none;
-    color:black;
+    color:#ffffff;
 }
 
 .header{
+    background: rgba( 0, 0, 0, 0.50 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    height:78vh;
+    height:85vh;
 }
 .header-text{
     display: flex;
@@ -64,20 +77,57 @@ a{
     font-weight: 200;
     width: 30vw;
 }
-.arrow{
-    align-self: flex-start;
-    font-size: 25px;
-    font-weight: 600;
+.logo img{
+    width:1.5vw;
+    margin-left: 20px;
 }
+.arrow{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.arrow a{
+    align-self:center;
+}
+#arrow{
+    align-self:center;
+    
+    animation: animation 1000ms linear infinite both;
+
+  
+}
+
+  @keyframes animation { 
+    0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    3.2% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.116, 0, 1); }
+    6.41% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 44.807, 0, 1); }
+    11.41% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 31.521, 0, 1); }
+    16.42% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 10.506, 0, 1); }
+    21.42% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -2.656, 0, 1); }
+    26.43% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -6.186, 0, 1); }
+    36.44% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.44, 0, 1); }
+    46.45% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.854, 0, 1); }
+    66.47% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.118, 0, 1); }
+    86.49% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.016, 0, 1); }
+    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  }
+  
+  
 
 .headline{
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 30px;
     color:#bdbdbd;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 
-.project{
+/* .project{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -105,13 +155,33 @@ a{
 .project-link{
     font-size: 20px;
     font-weight: 700;
+} */
+.first-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:2vw;
+
+}
+.project-image-new{
+    width:35vw;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.project-image-new:hover{
+    transform:scale(1.01);
+
 }
 .visual-exploration h2{
     font-size:34px;
 }
 .visual-exploration p{
 
-    font-size: 22px;
+    font-size: 16px;
     font-size: 500;
     color:#bdbdbd;
 }
@@ -129,29 +199,55 @@ a{
 }
 .first-row > img, .second-row > img{
     padding-left:20px;
-    width: 25vw;
+    width: 30vw;
     padding-top: 20px;
 }
 .visual-exploration a{
 
-    padding-top: 30px;
+    /* padding-top: 30px; */
     font-size: 20px;
-    font-weight: 700;;
+    font-weight: 300;;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    background-color: #6636DD;
+    margin-top:20px;
+    height:50px;
+    color:white;
+    width:250px;
+    align-self:center;
+    margin: 0 auto;
+    margin-top:20px;
+    border-radius:10px;
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.visual-exploration a:hover {
+    transform: scale(1.1);
 }
 .about-content{
    
-    font-size: 22px;
-    font-size: 500;
-    color:#bdbdbd;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color:#fafafa;
     width: 40vw; 
 }
 .aboutme{
-    margin-top: 100px;
+    /* margin-top: 20vw; */
 }
 .about{
     display: flex;
+    justify-content: space-evenly;
+    color:white;
+}
+.about img{
+    width:25vw;
 }
 
 .aboutme h2{
@@ -194,6 +290,14 @@ hr{
 .footer p{
     font-size: 15px;
 }
+.resume{
+    background-color:#6636DD;
+    padding: 10px;
+    border-radius: 5px;
+}
+.links a:hover{
+    transform: scale(1.1);
+}
 
 /* responsiveness */
 @media only screen and (max-width:600px){
@@ -209,10 +313,14 @@ hr{
         justify-content: center;
     }
     .links a{
-        font-size: 18px;
-        margin-left: -6px; 
+        font-size: 16px;
+        /* margin-left: -6px;  */
+        margin:0 auto;
+        /* padding-left:20px; */
+        margin-left:10px;
     }
     .header{
+        margin-top:20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -237,6 +345,10 @@ hr{
         font-size: 22px;
         font-weight: 400;
         text-align: center;
+    }
+    .logo img{
+        width:5vw;
+        margin-left: 0;
     }
     .arrow{
         align-self: center;
@@ -345,6 +457,16 @@ hr{
     }
     .footer p{
         font-size: 15px;
+    }
+
+    .first-project{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-image-new{
+        width:85vw;
     }
 }
 

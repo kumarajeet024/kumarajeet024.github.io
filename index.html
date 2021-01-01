@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="assets/favi.png" sizes="16x60" type="image/png">
     <title>Ajeet Kumar | Product Designer</title>
 </head>
 <body>
@@ -14,12 +15,15 @@
         <div class="navigation" data-aos="fade-up"
         data-aos-duration="1000">
             <div class="logo">
-                <h1>ak.</h1>
+                <a href="https://ajeet.design"><img src="./assets/A.png" alt=""></a>
+                <!-- <h1>ak.</h1> -->
             </div>
             <div class="links">
                 <a href="#projects" >Portfolio</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+                <a href="#contact" class="resume">Resume</a>
+                
             </div>
         </div>
 
@@ -27,17 +31,17 @@
             <div class="header-text">
                 <div class="header-text-left" data-aos="fade-up"
                 data-aos-duration="1000">
-                <h1>Hello, I'm Ajeet Kumar.</h1>
+                <h1><span style="color: #6636DD;"> Hello</span>, I'm Ajeet Kumar.</h1>
                 </div>
                 <div class="header-text-right" data-aos="fade-up"
                 data-aos-duration="2000">
-                    <p>I am a Product Designer and Aspiring Superhero. I enjoys creating delightful human centered 
+                    <p>I am a <span style="color: #6636DD;">Product Designer</span> and Aspiring Superhero. I enjoys creating delightful human centered 
                     digital experiences.</p>
                 </div>
             </div>
             <div class="arrow">
                 <p>See work</p>
-                <span class="iconify" data-inline="false" data-icon="bi:arrow-down" style="font-size: 60px; color:#bdbdbd   ;"></span>
+                <a href="#projects"><span class="iconify" id="arrow" data-inline="false" data-icon="bi:arrow-down" style="font-size: 40px; color:#6636DD  ;"></span></a>
             </div>
         </div>
 
@@ -49,62 +53,30 @@
 
 
         <div class="projects">
-            <div class="project" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
-                <div class="project-image">
-                    <img src="./assets/newsstand.png" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
-                </div>
-                <div class="project-info">
-                    <div class="project-name">
-                        <p>01/Newsstand</p>
-                    </div>
-                    <div class="project-detail">
-                        <p>News app for millennials that can create an engaging experience for our users that will inform them and continually capture their attention and time.</p>
-                    </div>
-                    <div class="project-link">
-                        <a target="_blank" href="https://kumarajeet024.medium.com/newsstand-defining-better-news-experience-ui-ux-case-study-eb7a65e49379"><u>Read complete case study </u><span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:black;"></span></a>
-                    </div>
-                </div>
+            <div class="first-project" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
+                <a target="_blank" href="https://kumarajeet024.medium.com/newsstand-defining-better-news-experience-ui-ux-case-study-eb7a65e49379" data-aos="zoom-in-down" data-aos-duration="1500"><img src="./assets/newsstand.png" class="project-image-new" alt=""></a>
+                <a target="_blank" href="https://kumarajeet024.medium.com/communico-a-language-learning-mobile-app-ux-case-study-9deaedf00e53" data-aos="zoom-in-down" data-aos-duration="1500"><img src="./assets/communico.png" class="project-image-new" alt=""></a>
             </div>
-
-
-            <div class="project" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
-                <div class="project-image">
-                    <img src="./assets/communico.png" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
-                </div>
-                <div class="project-info">
-                    <div class="project-name">
-                        <p>02/Communico</p>
-                    </div>
-                    <div class="project-detail">
-                        <p>Helping users to learn their target language by communicating with others and reinforce what they have learnt and enhanced both their writing and speaking skills.</p>
-                    </div>
-                    <div class="project-link">
-                        <a target="_blank" href="https://kumarajeet024.medium.com/communico-a-language-learning-mobile-app-ux-case-study-9deaedf00e53"><u>Read complete case study </u><span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:black;"></span></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project" data-aos="zoom-in-down" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom">
-                <div class="project-image">
-                    <img src="./assets/fmf.svg" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
-                </div>
-                <div class="project-info">
-                    <div class="project-name">
-                        <p>03/Fill My Forms</p>
-                    </div>
-                    <div class="project-detail">
-                        <p>Helping students to find their career and gradutes to find their dream job. Users can fill any of their admission, entrance or government job forms within seconds</p>
-                    </div>
-                    <div class="project-link">
-                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.pierolap.fmf&hl=en_IN"><u>Play store </u><span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:black;"></span></a>
-                    </div>
-                </div>
+            <div class="first-project" data-aos="zoom-in-down" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
+                <a target="_blank" href="https://www.behance.net/gallery/110474463/OKR-Dashboard" data-aos="zoom-in-down" data-aos-duration="1500"><img src="./assets/okr.png" class="project-image-new" alt=""></a>
+                <a target="_blank" href="https://www.behance.net/gallery/110141751/Fill-my-forms" data-aos="zoom-in-down" data-aos-duration="1500"><img src="./assets/fillmyforms.png" class="project-image-new" alt=""></a> 
             </div>
         </div>
 
         <div class="visual-exploration" data-aos="fade-up" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
-            <h2>Visual Exploration</h2>
+            <!-- <h2>Interactions</h2> -->
+            <img src="./assets/interaction.png" alt="">
+            <p data-aos="fade-up" data-aos-duration="2000"      data-aos-anchor-placement="center-bottom">While Exploring visuals, along with aesthetics but I do keep wondering for better usability and experience for the same. Make sure to check more of them on Dribbble.</p>
+            <div class="first-row">
+                <img src="./assets/completeorder.gif" alt="">
+                <img src="./assets/sports.gif" alt="">
+            </div>
+        </div>
+
+        
+        <div class="visual-exploration" data-aos="fade-up" data-aos-duration="1000"      data-aos-anchor-placement="center-bottom">
+            <!-- <h2>Visual Exploration</h2> -->
+            <img src="./assets/visual.png" alt="">
             <p data-aos="fade-up" data-aos-duration="2000"      data-aos-anchor-placement="center-bottom">While Exploring visuals, along with aesthetics but I do keep wondering for better usability and experience for the same. Make sure to check more of them on Dribbble.</p>
             <div class="first-row">
                 <img src="./assets/learn.png" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
@@ -114,11 +86,11 @@
                 <img src="./assets/tasker.svg" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
                 <img src="./assets/card.svg" alt="" class="visual-content-image" data-tilt data-tilt-glare =true data-tilt-maxGlare=".2" data-tilt-scale="1.01">
             </div>
-            <a target="_blank" href="https://dribbble.com/ninjakai407"><u>See more on dribbble</u> <span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:black;"></span></a>
+            <a target="_blank" href="https://dribbble.com/ninjakai407" class="dribble-button">See more on dribbble</a>
         </div>
 
         <div class="aboutme" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" id="about">
-            <h2>About Me</h2>
+            <img src="./assets/about.png" alt="">
             <div class="about">
                 <div class="about-content" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
                     <p>I am <span class="name">Ajeet Kumar</span>. I am a <strong>self-taught designer</strong> and
@@ -133,7 +105,7 @@
                         <strong>AKGEC, Ghaziabad.</strong></p>
                         <p>When I’m not coding or pushing pixels, you’ll find me watching
                             Anime and listening music. Always up for spontaneous 
-                            adventure. I am a huuuuge fan of <strong>Captain America.</strong></p>
+                            adventure.</p>
                 </div>
                 
                 <div class="about-img">
@@ -148,19 +120,19 @@
         <hr>
 
         <div class="contact" id="contact">
-            <p>Let's Connect!</p>
+            <p style="color: #6636DD;">Let's Connect!</p>
             <h6 class="left-second">or just drop hi, I’m always up for a chat</h6>
             <div class="social">
-                <a href="mailto:kumarajeet024@gmail.com"><u>kumarajeet024@gmail.com</u> <span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:black;"></span></a>
+                <a href="mailto:kumarajeet024@gmail.com" style="color: #6636DD;"><u>kumarajeet024@gmail.com</u> <span class="iconify" data-inline="true" data-icon="cil:arrow-right" style="font-size: 24px; color:#6636DD;"></span></a>
                 <div class="social-media">
-                <a  target="_blank" href="https://dribbble.com/ninjakai407"><span class="iconify" data-inline="false" data-icon="cib:dribbble" style="color: #000000; font-size: 30px;"></span></a>
-                        <a target="_blank" href="https://behance.net/kumarajeet024"><span class="iconify" data-inline="false" data-icon="ant-design:behance-outlined" style="color: #000000; font-size: 45px;"></span></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/ajeet024/"><span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin" style="font-size: 33px; color:#000000;"></span></a>
-                        <a target="_blank" href="http://twitter.com/its_a_jeet"><span class="iconify" data-inline="false" data-icon="uil:twitter-alt" style="color: #000000; font-size: 37px;"></span></a>
-                        <a target="_blank" href="http://kumarajeet024.medium.com"><span class="iconify" data-inline="false" data-icon="ant-design:medium-outlined" style="color: #000000; font-size: 38px;"></span></a> 
+                <a  target="_blank" href="https://dribbble.com/ninjakai407"><span class="iconify" data-inline="false" data-icon="cib:dribbble" style="color: #6636DD; font-size: 30px;"></span></a>
+                        <a target="_blank" href="https://behance.net/kumarajeet024"><span class="iconify" data-inline="false" data-icon="ant-design:behance-outlined" style="color: #6636DD; font-size: 45px;"></span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ajeet024/"><span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin" style="font-size: 33px; color:#6636DD;"></span></a>
+                        <a target="_blank" href="http://twitter.com/its_a_jeet"><span class="iconify" data-inline="false" data-icon="uil:twitter-alt" style="color: #6636DD; font-size: 37px;"></span></a>
+                        <a target="_blank" href="http://kumarajeet024.medium.com"><span class="iconify" data-inline="false" data-icon="ant-design:medium-outlined" style="color: #6636DD; font-size: 38px;"></span></a> 
                 </div>
             </div>
-            <div class="footer">
+            <div class="footer">    
                 <p>Designed and developed by Ajeet.</p>
             </div>
         </div>
@@ -176,6 +148,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/hover.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
     <!-- Hotjar Tracking Code for www.ajeet.design -->
 <script>
     (function(h,o,t,j,a,r){
